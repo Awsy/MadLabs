@@ -70,12 +70,6 @@ class ViewController: UIViewController {
 	// MARK: - Story Buttons
 	
 	@IBAction func createStoryDidTapped(_ sender: UIButton) {
-		//    let animal = animalSegmentedControl.titleForSegment(at: animalSegmentedControl.selectedSegmentIndex)
-		//    let story = "At the age of \(ageTextField.text!), \(firstNameTextField.text!) took a trip to \(locationTextField.text!) with \(Int(numberOfPetsStepper.value)) pets in order to \(verbTextField.text!) with a \(animal!). \(firstNameTextField.text!) decided to buy \(Int(numberSlider.value)). Now they live happily ever after"
-		//
-		//    print(story)
-		//    performSegue(withIdentifier: "storyScreen", sender: story)
-		
 		let validationResult = validate()
 		if let config = validationResult.config {
 			showOriginalStory(config: config)
@@ -216,6 +210,3 @@ extension ViewController: UITextFieldDelegate {
 	}
 }
 
-/*
-implement the DRY method to the checks i've made
-*/
